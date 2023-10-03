@@ -136,7 +136,7 @@ LOGGING = {
         },
         'file': {
             'class': 'logging.FileHandler',
-            'filename': './logs/myproject.log',
+            'filename': './myproject.log',
             'formatter': 'verbose',
         },
     },
