@@ -66,7 +66,7 @@ class Command(BaseCommand):
                     product = Product.objects.filter(pk=randint(1, Product.objects.count())).first()
                     price += product.price
                     order.products.add(product)
-                    product.quantity-=1
+                    product.quantity -= 1
                     product.save()
                 order.total_price = price
                 order.save()
